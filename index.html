@@ -70,7 +70,7 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,58px);line-
 .qa{display:flex;gap:14px;align-items:center;margin-top:16px;flex-wrap:wrap}
 .qa .btn{background:#f1c36a;color:var(--green)}
 .qa .back{font-size:15px;text-decoration:underline;opacity:.8;cursor:pointer}
-#quiz:not(:has(input[name=q1]:checked)) .next1,#quiz:not(:has(input[name=q2]:checked)) .next2,#quiz:not(:has(input[name=q3]:checked)) .next3{opacity:.4;pointer-events:none}
+#quiz:not(:has(input[name=q1]:checked)) .next1,#quiz:not(:has(input[name=q2]:checked)) .next2,#quiz:not(:has(input[name=q3]:checked)) .next3{opacity:1;background:#e9dfc2!important;color:#5d5c4b!important;pointer-events:none}
 .res{display:none}
 #quiz:has(#q2a:checked) .r-cards,#quiz:has(#q2c:checked):has(#q1a:checked) .r-cards{display:block}
 #quiz:has(#q2b:checked) .r-land,#quiz:has(#q2c:checked):has(#q1b:checked) .r-land{display:block}
@@ -119,6 +119,7 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
 <body>
 <header><div class="brand">Евгения Гаршина</div><nav><a href="#works">Работы</a><a href="#services">Услуги</a><a href="#quiz">Подбор</a><a href="#how">Как работаю</a></nav></header>
 
+<main>
 <div class="hero">
   <div>
     <h1 class="h1w">Сайты&nbsp;<em>|</em> сервисы&nbsp;<em>|</em> карточки</h1>
@@ -179,7 +180,7 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
 </section>
 
 <section id="quiz">
-  <input class="vh" type="radio" name="step" id="s1" checked><input class="vh" type="radio" name="step" id="s2"><input class="vh" type="radio" name="step" id="s3"><input class="vh" type="radio" name="step" id="s4">
+  <input class="vh" type="radio" name="step" id="s1" aria-label="Шаг 1 из 4" checked><input class="vh" type="radio" name="step" id="s2" aria-label="Шаг 2 из 4"><input class="vh" type="radio" name="step" id="s3" aria-label="Шаг 3 из 4"><input class="vh" type="radio" name="step" id="s4" aria-label="Шаг 4 из 4">
   <h2>Что вам нужно: карточки, сайт или оба? 3&nbsp;вопроса</h2>
   <p class="sub" style="color:#fff6dd;opacity:.8">Ответы нигде не сохраняются</p>
   <div class="qbox">
@@ -224,6 +225,7 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
   <p>Самозанятая: выдаю чек, заключаю договор</p>
   <a class="btn" href="https://t.me/evvalon">Написать в Telegram</a>
 </div>
+</main>
 <footer><span>© Евгения Гаршина</span><span>Концепты и учебные работы</span></footer>
 <a class="fab" href="https://t.me/evvalon" aria-label="Написать в Telegram">Написать мне</a>
 </body>
