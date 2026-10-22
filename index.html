@@ -89,6 +89,8 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
 .wd span{font-size:15px;color:var(--soft)}
 .wp{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--soft);white-space:nowrap}
 @media (max-width:900px){.wr{grid-template-columns:1fr;gap:4px;padding:12px 0}.what{padding:6px 20px}.wp{white-space:normal}.meb{align-items:flex-start}.mecap{text-align:left}}
+.works:not(.three){max-width:880px}.works:not(.three) .work h3{font-size:19px}
+@media (max-width:700px){#works>div.works:not(.three){display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 calc(var(--pad)*-1);padding:0 var(--pad) 6px;scroll-padding:0 var(--pad);scrollbar-width:none;max-width:none}#works>div.works:not(.three)::-webkit-scrollbar{display:none}#works>div.works:not(.three) .col{display:contents}#works>div.works:not(.three) .work{flex:none;width:250px;scroll-snap-align:start}}
 .works.three{max-width:980px}.works.three,.works.three .col{gap:14px}.works.three .work img{border-radius:14px}.works.three .work h3{font-size:14px;margin:6px 2px 0;font-weight:600}
 @media (max-width:900px){.works.three{grid-template-columns:1fr 1fr;gap:12px}.works.three .col{display:contents}.works.three .work{min-width:0}}
 #trust{padding-top:24px;padding-bottom:24px}#trust h2{text-align:center;margin:0 auto 6px;font-size:clamp(24px,3vw,36px)}.gar{margin-top:14px;gap:14px;text-align:center}.gar div{font-size:clamp(16px,1.8vw,20px);padding-top:12px}
@@ -117,7 +119,7 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
   <div class="what">
     <div class="wr"><span class="wt">[САЙТЫ]</span><div class="wd"><b>Сайт-визитка и лендинг</b><span>один экран, где клиент сразу видит, кто вы, цены и как записаться</span></div><span class="wp">от&nbsp;4&nbsp;000&nbsp;₽</span></div>
     <div class="wr"><span class="wt">[МАГАЗИНЫ]</span><div class="wd"><b>Интернет-магазин на конструкторе</b><span>каталог, цены, оформление под ваш бренд</span></div><span class="wp">считаю отдельно</span></div>
-    <div class="wr"><span class="wt">[ПРИЛОЖЕНИЯ]</span><div class="wd"><b>Небольшие сервисы под задачу</b><span>упрощаю рутинные задачи</span></div><span class="wp">под задачу</span></div>
+    <div class="wr"><span class="wt">[ПРИЛОЖЕНИЯ]</span><div class="wd"><b>Сервисы для бизнеса</b><span>упрощаю рутинные задачи</span></div><span class="wp">по запросу</span></div>
     <div class="wr"><span class="wt">[КАРТОЧКИ]</span><div class="wd"><b>Обложки и слайды для Wildberries и Ozon</b></div><span class="wp">от&nbsp;600&nbsp;₽</span></div>
     <div class="wr"><span class="wt">[ИИ]</span><div class="wd"><b>Помощник на нейросетях</b></div><span class="wp">по запросу</span></div>
   </div>
@@ -128,10 +130,10 @@ a:focus-visible{outline:3px solid var(--amber-t);outline-offset:3px;border-radiu
   <h2>Мои работы</h2>
   <h3 class="grp">Сайты</h3>
 <div class="works"><div class="col">
-      <div class="work"><img src="gorodskaya.jpg" alt="Сайт пекарни Городская" width="1000" height="750" loading="lazy" decoding="async"><span class="tag">Сайт</span><h3>Городская: пекарня</h3><p>Каталог, корзина, подарочные боксы, упаковка в одном стиле</p><a class="l" href="https://evvalon.github.io/gorodskaya/">Открыть сайт</a></div>
-      <div class="work"><img src="northroast.jpg" alt="Сайт кофейного бренда North Roast" width="1100" height="825" loading="lazy" decoding="async"><span class="tag">Сайт</span><h3>North Roast: кофейный бренд</h3><p>Подбор вкуса, 3 сорта кофе, окно заказа</p><a class="l" href="https://evvalon.github.io/north-roast/">Открыть сайт</a></div>
+      <div class="work"><img src="case-gorodskaya.jpg" alt="Сайт пекарни Городская на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><h3>Городская: пекарня</h3><a class="l" href="https://evvalon.github.io/gorodskaya/">Открыть сайт</a></div>
+      <div class="work"><img src="case-northroast.jpg" alt="Сайт кофейного бренда North Roast на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><h3>North Roast: кофейный бренд</h3><a class="l" href="https://evvalon.github.io/north-roast/">Открыть сайт</a></div>
     </div><div class="col">
-      <div class="work"><img src="novaskin.jpg" alt="Сайт бренда ухода за кожей Nova Skin" width="1100" height="825" loading="lazy" decoding="async"><span class="tag">Сайт</span><h3>Nova Skin: бренд ухода</h3><p>Подбор ухода из 3 вопросов, 10 продуктов</p><a class="l" href="https://evvalon.github.io/NOVASKIN/">Открыть сайт</a></div>
+      <div class="work"><img src="case-novaskin.jpg" alt="Сайт бренда ухода за кожей Nova Skin на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><h3>Nova Skin: бренд ухода</h3><a class="l" href="https://evvalon.github.io/NOVASKIN/">Открыть сайт</a></div>
     </div></div>
 <h3 class="grp" style="margin-top:60px">Инфографика для карточек</h3>
 <div class="works three"><div class="col"><div class="work"><img src="diffuzor.jpg" alt="Диффузор: исходное фото и готовая обложка" width="1100" height="783" loading="lazy" decoding="async"><h3>Диффузор для офиса</h3></div><div class="work"><img src="kofe.jpg" alt="Кофе: было и стало" width="1100" height="794" loading="lazy" decoding="async"><h3>Кофе: обновление карточки</h3></div></div><div class="col"><div class="work"><img src="zhiraf.jpg" alt="Игрушка-жираф: исходное фото и обложки" width="1100" height="1381" loading="lazy" decoding="async"><h3>Игрушка-каталка</h3></div></div><div class="col"><div class="work"><img src="shchetka.jpg" alt="Зубная щётка: исходное фото и обложка" width="1100" height="783" loading="lazy" decoding="async"><h3>Зубная щётка</h3></div></div></div>
