@@ -74,8 +74,8 @@ h2{font-family:var(--hand);font-weight:400;font-size:clamp(34px,4.4vw,64px);line
 .tag{display:inline-block;margin:16px 4px 0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;background:var(--lime);padding:3px 10px;border-radius:999px}
 .work h3{font-size:20px;font-weight:600;margin:10px 4px 2px;line-height:1.25}
 .work a.l{display:inline-flex;align-items:center;min-height:44px;margin:0 4px;font-weight:600;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:3px;text-underline-offset:5px}
-.works:not(.three){max-width:960px}
-.works.three{grid-template-columns:repeat(3,1fr);max-width:980px}.works.three,.works.three .col{gap:14px}.works.three .work img{border-radius:14px}.works.three .work h3{font-size:14px;margin:6px 2px 0;font-weight:500}
+.works:not(.three){max-width:1400px}
+.works.three{grid-template-columns:repeat(3,1fr);max-width:1400px}.works.three,.works.three .col{gap:14px}.works.three .work img{border-radius:14px}.works.three .work h3{font-size:14px;margin:6px 2px 0;font-weight:500}
 /* спокойно */
 #trust{padding-top:24px;padding-bottom:24px}#trust h2{text-align:center;margin:0 auto 6px;font-size:clamp(30px,3.6vw,46px)}
 .gar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;text-align:center}
@@ -110,6 +110,16 @@ footer{padding:26px var(--pad);font-size:13px;color:var(--soft);display:flex;gap
 a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:8px}
 .btn:focus-visible,.fab:focus-visible{border-radius:999px}
 .srv a:focus-visible,.fab:focus-visible{outline-color:var(--lime)}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;background:#fff;border:2px solid var(--ink);border-radius:30px;padding:36px 40px;max-width:1100px;margin-top:22px}
+.mt{font-family:var(--hand);font-weight:400;font-size:clamp(28px,3vw,38px);line-height:1.1;margin:0 0 18px}
+.mi{margin-bottom:20px}
+.mr{display:flex;align-items:baseline;gap:10px;font-size:18px;font-weight:500}
+.mr b{font-weight:500}
+.mr i{flex:1;min-width:18px;border-bottom:2px dotted rgba(17,17,17,.4);transform:translateY(-5px)}
+.mr span{white-space:nowrap;font-weight:600;background:linear-gradient(transparent 58%,var(--lime) 58%);padding:0 6px}
+.md{font-size:14.5px;color:var(--soft);margin-top:5px;line-height:1.45;max-width:440px}
+.mf{grid-column:1/-1;margin-top:8px}
+@media (max-width:900px){.menu{grid-template-columns:1fr;padding:24px 18px}.mr{font-size:16px;gap:8px}.mt{margin-bottom:12px}.mi{margin-bottom:16px}.md{font-size:13.5px}.mg+.mg{margin-top:12px}}
 @media (max-width:900px){
   nav{display:none}
   .soc a{width:38px;height:38px}
@@ -154,7 +164,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
 }
 </style>
 </head>
-<header><nav><a href="#works">Работы</a><a href="#services">Услуги</a><a href="#how">Как работаю</a></nav>
+<header><nav><a href="#works">Работы</a><a href="#services">Услуги</a></nav>
 <div class="soc">
   <a href="https://t.me/evvalon" aria-label="Telegram" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
   <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" aria-label="MAX" rel="noopener"><span>MAX</span></a>
@@ -209,30 +219,26 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
     </div></div>
   </section>
 
-<section id="trust">
-  <h2>Почему со мной спокойно</h2>
-  <div class="gar"><div>Договор и чек</div><div>Первый экран бесплатно</div><div>Правки входят в цену</div></div>
-</section>
-
 <section id="services" style="background:rgba(255,250,240,.6)">
-      <div class="services">
-    <div class="srv"><h3>Инфографика для карточки</h3><div class="p">от&nbsp;600&nbsp;₽</div><ul><li>обложка от&nbsp;600&nbsp;₽</li><li>слайд от&nbsp;400&nbsp;₽</li><li>5&nbsp;слайдов: 2&nbsp;000&nbsp;₽</li></ul><a class="btn" href="https://t.me/evvalon">Заказать слайды</a></div>
-    <div class="srv light"><h3>Сайт на 1 страницу</h3><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div><ul><li>подходит для визитки, портфолио и лендинга</li><li>до&nbsp;6&nbsp;блоков</li><li>телефон и компьютер</li><li>квиз или форма: +&nbsp;2&nbsp;000&nbsp;₽</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
-    <div class="srv"><h3>Сайт из нескольких страниц</h3><div class="p">от&nbsp;10&nbsp;000&nbsp;₽</div><ul><li>подходит для эксперта или компании с несколькими услугами, студии, школы</li><li>до&nbsp;5&nbsp;страниц, у каждой свои блоки</li><li>телефон и компьютер, публикация и ссылка</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
+  <h2>Услуги и цены</h2>
+  <div class="menu">
+    <div class="mg">
+      <h3 class="mt"><span class="hl">Сайты</span></h3>
+      <div class="mi"><div class="mr"><b>Сайт на 1 страницу</b><i></i><span>от&nbsp;5&nbsp;000&nbsp;₽</span></div><p class="md">для визитки, портфолио и лендинга. До&nbsp;6&nbsp;блоков, телефон и компьютер</p></div>
+      <div class="mi"><div class="mr"><b>Квиз или форма на сайте</b><i></i><span>+&nbsp;2&nbsp;000&nbsp;₽</span></div></div>
+      <div class="mi"><div class="mr"><b>Сайт из нескольких страниц</b><i></i><span>от&nbsp;10&nbsp;000&nbsp;₽</span></div><p class="md">для эксперта или компании с несколькими услугами, студии, школы. До&nbsp;5&nbsp;страниц, у каждой свои блоки, публикация и ссылка</p></div>
+    </div>
+    <div class="mg">
+      <h3 class="mt"><span class="hl">Карточки</span></h3>
+      <div class="mi"><div class="mr"><b>Обложка</b><i></i><span>от&nbsp;600&nbsp;₽</span></div></div>
+      <div class="mi"><div class="mr"><b>Слайд</b><i></i><span>от&nbsp;400&nbsp;₽</span></div></div>
+      <div class="mi"><div class="mr"><b>5&nbsp;слайдов</b><i></i><span>2&nbsp;000&nbsp;₽</span></div></div>
+      <h3 class="mt" style="margin-top:26px"><span class="hl">Отдельно</span></h3>
+      <div class="mi"><div class="mr"><b>Магазин, каталог, сложный сайт</b><i></i><span>считаю отдельно</span></div><p class="md">расскажите задачу, предложу решение и срок</p></div>
+    </div>
+    <div class="mf"><a class="btn" href="https://t.me/evvalon">Заказать</a></div>
   </div>
-  <div class="srv-wide"><div><h3>Интернет-магазин, каталог, сложный сайт</h3><p>Считаю отдельно. Расскажите задачу, предложу решение и срок.</p></div><a class="btn" href="https://t.me/evvalon">Обсудить задачу</a></div>
 </section>
-
-<section id="how">
-  <h2>Четыре шага от сообщения до готовой работы</h2>
-  <div class="steps" style="margin-top:30px">
-    <div class="step"><em>1</em><h3>Вы пишете</h3><p>Что продаёте и что нужно</p></div>
-    <div class="step"><em>2</em><h3>Согласуем</h3><p>Состав, срок, цена</p></div>
-    <div class="step"><em>3</em><h3>Показываю</h3><p>Присылаю результат</p></div>
-    <div class="step"><em>4</em><h3>Правки и сдача</h3><p>1 круг включён</p></div>
-  </div>
-</section>
-
 <div class="contact" id="contact">
   <h2>Напишите «макет» или «слайд»: первый шаг бесплатно</h2>
     <a class="btn" href="https://t.me/evvalon">Написать в Telegram</a>
