@@ -10,8 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Евгения Гаршина: сайты, сервисы и карточки для экспертов">
 <meta property="og:description" content="Работаю с экспертами и малым бизнесом, чтобы ваш клиент за 1 минуту понимал, чем вы помогаете. Сама веду кабинет на маркетплейсах, поэтому знаю, на что смотрит покупатель">
-<meta property="og:url" content="https://evvalon.github.io/portfolio/">
-<meta property="og:image" content="https://evvalon.github.io/portfolio/og-cover.jpg">
+<meta property="og:url" content="https://evvalon.online/">
+<meta property="og:image" content="https://evvalon.online/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +31,7 @@ header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdro
 .brand{font-family:var(--hand);font-size:30px;line-height:1}
 nav{display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--soft)}
 nav a:hover{color:var(--ink)}
-.soc{display:flex;gap:8px}
+.soc{display:flex;gap:8px;margin-left:auto}
 .soc a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--ink);font-size:11px;font-weight:700;letter-spacing:.02em;transition:background .2s,transform .2s}
 .soc a:hover{background:var(--lime);transform:translateY(-2px)}
 .btn{display:inline-block;padding:16px 30px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:16px;white-space:nowrap;cursor:pointer;border:0;font-family:var(--sans);transition:transform .2s}
@@ -40,6 +40,7 @@ nav a:hover{color:var(--ink)}
 .btn:hover{transform:translateY(-2px)}
 /* первый экран */
 .hero{padding:54px var(--pad) 40px;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.myname{font-family:var(--hand);font-size:clamp(28px,3.2vw,44px);line-height:1.1;margin-bottom:14px}
 .kick{font-size:14px;letter-spacing:.34em;color:#777;font-weight:400;margin-bottom:14px}
 h1{font-family:var(--hand);font-weight:400;font-size:clamp(44px,5.6vw,92px);line-height:1.08;margin:0 0 24px;text-wrap:balance}
 .lead{font-size:clamp(17px,1.5vw,21px);color:#444;max-width:620px}
@@ -140,19 +141,20 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
   /* первый экран: слева заголовок и описание, справа фото с подписью */
   .hero{grid-template-columns:1fr 124px;column-gap:14px;row-gap:0;align-items:start}
   .hero>div:first-child{display:contents}
-  .kick{grid-column:1;grid-row:1;margin-bottom:8px}
-  .hero h1{grid-column:1;grid-row:2;font-size:30px;margin-bottom:10px}
-  .hero .lead{grid-column:1;grid-row:3;font-size:14px;line-height:1.45}
-  .meb{order:0;grid-column:2;grid-row:1/4;flex-direction:column;align-items:stretch;gap:10px}
+  .myname{grid-column:1;grid-row:1;font-size:28px;margin-bottom:8px}
+  .kick{grid-column:1;grid-row:2;margin-bottom:8px}
+  .hero h1{grid-column:1;grid-row:3;font-size:30px;margin-bottom:10px}
+  .hero .lead{grid-column:1;grid-row:4;font-size:14px;line-height:1.45}
+  .meb{order:0;grid-column:2;grid-row:1/5;flex-direction:column;align-items:stretch;gap:10px}
   .mew{max-width:none;width:124px}
   .mecap{font-size:13px;line-height:1.3}
-  .hero .chips{grid-column:1/3;grid-row:4;margin-top:14px}
-  .hero .cta{grid-column:1/3;grid-row:5}
-  .hero .facts{grid-column:1/3;grid-row:6}
+  .hero .chips{grid-column:1/3;grid-row:5;margin-top:14px}
+  .hero .cta{grid-column:1/3;grid-row:6}
+  .hero .facts{grid-column:1/3;grid-row:7}
 }
 </style>
 </head>
-<header><div class="brand">Евгения Гаршина</div><nav><a href="#works">Работы</a><a href="#services">Услуги</a><a href="#how">Как работаю</a></nav>
+<header><nav><a href="#works">Работы</a><a href="#services">Услуги</a><a href="#how">Как работаю</a></nav>
 <div class="soc">
   <a href="https://t.me/evvalon" aria-label="Telegram" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
   <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" aria-label="MAX" rel="noopener"><span>MAX</span></a>
@@ -162,6 +164,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
 <main>
 <div class="hero">
   <div>
+    <div class="myname"><span class="hl">Евгения Гаршина</span></div>
     <div class="kick">ВЕБ-ДИЗАЙН · ИНФОГРАФИКА</div>
     <h1>Сайты, сервисы и&nbsp;<span class="hl">карточки</span></h1>
     <p class="lead">Работаю с экспертами и малым бизнесом, чтобы ваш клиент за 1&nbsp;минуту понимал, чем вы помогаете. Сама веду кабинет на маркетплейсах, поэтому знаю, на что смотрит покупатель</p>
@@ -175,7 +178,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
 <section id="about">
   <h2>Чем занимаюсь</h2>
   <div class="what">
-    <div class="wr"><span class="wt">[САЙТЫ]</span><div class="wd"><b>Сайт-визитка и лендинг</b><span>один экран, где клиент сразу видит, кто вы, цены и как записаться</span></div><span class="wp">от&nbsp;4&nbsp;000&nbsp;₽</span></div>
+    <div class="wr"><span class="wt">[САЙТЫ]</span><div class="wd"><b>Сайт-визитка и лендинг</b><span>один экран, где клиент сразу видит, кто вы, цены и как записаться</span></div><span class="wp">от&nbsp;5&nbsp;000&nbsp;₽</span></div>
     <div class="wr"><span class="wt">[МАГАЗИНЫ]</span><div class="wd"><b>Интернет-магазин на конструкторе</b><span>каталог, цены, оформление под ваш бренд</span></div><span class="wp">считаю отдельно</span></div>
     <div class="wr"><span class="wt">[ПРИЛОЖЕНИЯ]</span><div class="wd"><b>Сервисы для бизнеса</b><span>упрощаю рутинные задачи</span></div><span class="wp">по запросу</span></div>
     <div class="wr"><span class="wt">[КАРТОЧКИ]</span><div class="wd"><b>Обложки и слайды для Wildberries и Ozon</b></div><span class="wp">от&nbsp;600&nbsp;₽</span></div>
@@ -202,6 +205,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
       <div class="work"><img src="seminary.jpg" alt="Сервис учёта семинаров" width="1100" height="728" loading="lazy" decoding="async"><span class="tag">Сервис</span><h3>Учёт семинаров</h3></div>
     </div><div class="col">
       <div class="work"><img src="retsepty.jpg" alt="Приложение Мои рецепты" width="1100" height="816" loading="lazy" decoding="async"><span class="tag">Приложение</span><h3>Мои рецепты</h3><a class="l" href="https://evvalon.gitverse.site/recepty/">Открыть приложение</a></div>
+      <div class="work"><img src="zapisi.jpg" alt="Приложение для записи клиентов" width="1100" height="728" loading="lazy" decoding="async"><span class="tag">Приложение</span><h3>Записи клиентов</h3></div>
     </div></div>
   </section>
 
@@ -213,8 +217,8 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3
 <section id="services" style="background:rgba(255,250,240,.6)">
       <div class="services">
     <div class="srv"><h3>Инфографика для карточки</h3><div class="p">от&nbsp;600&nbsp;₽</div><ul><li>обложка от&nbsp;600&nbsp;₽</li><li>слайд от&nbsp;400&nbsp;₽</li><li>5&nbsp;слайдов: 2&nbsp;000&nbsp;₽</li></ul><a class="btn" href="https://t.me/evvalon">Заказать слайды</a></div>
-    <div class="srv light"><h3>Сайт на 1 страницу</h3><div class="p">от&nbsp;4&nbsp;000&nbsp;₽</div><ul><li>подходит для визитки, портфолио и лендинга</li><li>до&nbsp;6&nbsp;блоков</li><li>телефон и компьютер</li><li>квиз или форма: +&nbsp;2&nbsp;000&nbsp;₽</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
-    <div class="srv"><h3>Сайт из нескольких страниц</h3><div class="p">от&nbsp;8&nbsp;000&nbsp;₽</div><ul><li>подходит для эксперта или компании с несколькими услугами, студии, школы</li><li>до&nbsp;5&nbsp;страниц, у каждой свои блоки</li><li>телефон и компьютер, публикация и ссылка</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
+    <div class="srv light"><h3>Сайт на 1 страницу</h3><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div><ul><li>подходит для визитки, портфолио и лендинга</li><li>до&nbsp;6&nbsp;блоков</li><li>телефон и компьютер</li><li>квиз или форма: +&nbsp;2&nbsp;000&nbsp;₽</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
+    <div class="srv"><h3>Сайт из нескольких страниц</h3><div class="p">от&nbsp;10&nbsp;000&nbsp;₽</div><ul><li>подходит для эксперта или компании с несколькими услугами, студии, школы</li><li>до&nbsp;5&nbsp;страниц, у каждой свои блоки</li><li>телефон и компьютер, публикация и ссылка</li></ul><a class="btn" href="https://t.me/evvalon">Заказать сайт</a></div>
   </div>
   <div class="srv-wide"><div><h3>Интернет-магазин, каталог, сложный сайт</h3><p>Считаю отдельно. Расскажите задачу, предложу решение и срок.</p></div><a class="btn" href="https://t.me/evvalon">Обсудить задачу</a></div>
 </section>
