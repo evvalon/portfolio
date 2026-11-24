@@ -328,7 +328,7 @@ p,.md,.lead,.mecap{text-wrap:pretty}
 function startMetrika(){
 if(location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'){
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
-ym(113747005,"init",{clickmap:false,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+ym(114637843,"init",{ssr:true,clickmap:true,ecommerce:"dataLayer",referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true,webvisor:false});
 }
 }
 if(localStorage.getItem("evvalon-metrika-consent")==="yes") startMetrika();
@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded",function(){
   });
 })();
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/113747005" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/114637843" style="position:absolute;left:-9999px" alt=""></div></noscript>
 </body>
 </html>
 
