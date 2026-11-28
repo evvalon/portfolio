@@ -180,104 +180,125 @@ p,.md,.lead,.mecap{text-wrap:pretty}
 .work-kind{display:inline-block;margin:12px 4px 0;font-size:14px;font-weight:600;color:var(--soft)}
 .privacy-choice{position:fixed;z-index:30;bottom:16px;left:16px;max-width:420px;padding:18px;background:#fff;border:2px solid var(--ink);border-radius:20px;box-shadow:var(--sh);font-size:15px}.privacy-choice[hidden]{display:none}.privacy-choice a{text-decoration:underline}.privacy-choice div{display:flex;gap:10px;margin-top:12px}.privacy-choice button{border:1px solid var(--ink);border-radius:99px;padding:10px 16px;background:#fff;font:inherit;cursor:pointer}.privacy-choice button:last-child{background:var(--lime);font-weight:600}
 @media(max-width:600px){.privacy-choice{right:12px;left:12px;bottom:12px;max-width:none}}
+/* Обновлённый первый экран и навигация по услугам */
+.hero{min-height:calc(100svh - 67px);display:flex;align-items:flex-end;position:relative;padding:clamp(60px,9vw,130px) var(--pad);background:#242322 url('hero-workspace.png') center center/cover no-repeat;color:#fff}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.27),transparent 65%);pointer-events:none}
+.hero-copy{position:relative;z-index:1;max-width:850px}
+.hero .myname{font-family:var(--sans);font-size:16px;font-weight:500;margin-bottom:22px}
+.hero .myname .hl{background:none;margin:0;padding:0}
+.hero .kick{color:#e4e4e4;letter-spacing:.18em}
+.hero h1{font-family:var(--sans);font-size:clamp(48px,6vw,96px);font-weight:400;line-height:1.04;letter-spacing:-.055em;max-width:900px}
+.hero h1 .hl{background:none;margin:0;padding:0}
+.hero .lead{color:#f0f0f0;max-width:590px}
+.hero .btn{background:#ffad8e;color:#111;border-radius:12px}
+.hero .btn.o{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.7)}
+#about{padding-top:clamp(56px,8vw,112px);padding-bottom:clamp(56px,8vw,112px);background:#f6f5f2}
+#about h2{font-family:var(--sans);font-size:clamp(38px,5vw,70px);letter-spacing:-.045em}
+.about-intro{max-width:680px;color:var(--soft);font-size:18px;margin-bottom:38px}
+.what{max-width:none;background:transparent;border-top:1px solid var(--line);border-radius:0;padding:0}
+.wr{grid-template-columns:110px minmax(0,1fr) auto;gap:28px;padding:27px 0}
+.wt{font-size:13px;letter-spacing:.1em;color:#696969}.wt:before{display:none}
+.wd b{font-size:clamp(24px,2.8vw,40px);font-weight:400;letter-spacing:-.035em;margin-bottom:7px}
+.wd span{font-size:16px}
+.service-link{display:inline-flex;align-items:center;gap:24px;white-space:nowrap;font-weight:600;font-size:15px;min-height:48px}
+.service-link .arr{display:grid;place-items:center;width:46px;height:46px;border:1px solid #111;border-radius:50%;font-size:23px;line-height:1;transition:background .2s,transform .2s}
+.service-link:hover .arr{background:#ffad8e;transform:translateX(3px)}
+.service-link:focus-visible{outline:3px solid #111;outline-offset:4px}
+.site-brand{font-size:17px;font-weight:600;letter-spacing:-.035em;margin-right:36px;white-space:nowrap}
+header nav{margin-right:auto}
+#services{background:#f6f5f2!important}
+.about-head{display:grid;grid-template-columns:minmax(210px,340px) minmax(0,1fr);align-items:center;gap:clamp(28px,6vw,100px);margin-bottom:clamp(60px,8vw,110px)}
+.about-photo{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:18px;background:#d5d3cd}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 23%}
+.about-photo figcaption{position:absolute;left:16px;bottom:16px;background:#ffad8e;color:#111;border-radius:8px;padding:9px 14px;font-size:15px;font-weight:600}
+.about-copy .eyebrow{font-size:14px;letter-spacing:.16em;color:#666;margin-bottom:22px}
+.about-copy h2{max-width:760px;margin-bottom:24px}
+.about-copy p:last-child{font-size:clamp(17px,1.7vw,21px);max-width:620px;line-height:1.55}
+.about-list-title{font-size:clamp(30px,4vw,54px);letter-spacing:-.05em;font-weight:400;line-height:1.1;margin-bottom:14px}
+.about-list-intro{font-size:17px;color:var(--soft);margin-bottom:32px;max-width:650px}
+.grp,.mt,#how h2,#services h2{font-family:var(--sans);font-weight:400;letter-spacing:-.045em}
+.hl{background:linear-gradient(transparent 66%,#ffad8e 66% 91%,transparent 91%)}
+.step em{background:#ffad8e}.gar div{border-color:#ffad8e}.menu{border:1px solid #d8d8d8;border-radius:18px}.mr span{background:linear-gradient(transparent 60%,#ffad8e 60%)}
+.contact{background:#ffad8e}.contact h2{font-family:var(--sans);letter-spacing:-.05em}.btn.l{background:#ffad8e}
+.brief{background:#181818;color:#fff;padding-top:clamp(64px,8vw,110px);padding-bottom:clamp(64px,8vw,110px)}
+.brief h2{font-family:var(--sans);font-size:clamp(38px,5vw,70px);letter-spacing:-.05em}
+.brief>p{max-width:610px;color:#d1d1d1;font-size:18px;margin-bottom:30px}
+.brief fieldset{border:0;border-top:1px solid #565656;padding:24px 0 28px;margin:0}
+.brief legend{float:left;width:100%;font-size:18px;font-weight:600;margin-bottom:18px}
+.brief-options{clear:both;display:flex;flex-wrap:wrap;gap:10px}
+.brief-options label{cursor:pointer}.brief-options input{position:absolute;opacity:0;width:1px;height:1px}
+.brief-options span{display:block;border:1px solid #727272;border-radius:12px;padding:13px 18px;font-size:16px;transition:background .2s,color .2s}
+.brief-options input:checked+span{background:#ffad8e;border-color:#ffad8e;color:#111}
+.brief-options input:focus-visible+span{outline:3px solid #ffad8e;outline-offset:3px}
+.brief textarea{display:block;width:100%;max-width:760px;min-height:110px;border:1px solid #888;border-radius:12px;background:#242424;color:#fff;font:inherit;font-size:16px;padding:16px;resize:vertical}
+.brief textarea::placeholder{color:#bbb}.brief .btn{border-radius:12px;background:#ffad8e;color:#111;margin-top:20px}
+.brief-note{font-size:14px;color:#c7c7c7;margin-top:14px}
+.brief-result{max-width:760px;margin-top:36px;padding:26px;border:1px solid #777;border-radius:16px;background:#242424}
+.brief-result[hidden]{display:none}
+.brief-result h3{font-size:24px;font-weight:500;margin-bottom:8px}
+.brief-result>p{color:#d1d1d1;margin-bottom:18px}
+.brief-message{width:100%;min-height:170px;resize:vertical;color:#fff;background:#181818;border:1px solid #777;border-radius:12px;padding:16px;font:inherit;font-size:16px;line-height:1.55}
+.brief-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.brief-actions .btn{margin:0}.brief-actions a{display:inline-flex;align-items:center;min-height:48px;padding:10px 17px;border:1px solid #aaa;border-radius:12px;font-weight:500}
+.brief-actions a:hover{background:#383838}.copy-status{min-height:24px;margin-top:10px;color:#ffad8e;font-size:15px}
+/* Спокойные акценты и ссылки без подчёркиваний. */
+:root{--lime:#e5e5e2}
+a,a:hover,a:focus-visible{text-decoration:none!important}
+.hl,.mr span{background:none!important}
+.hero .btn,.brief .btn{background:#e9e9e6;color:#171717}
+.hero .btn:hover,.brief .btn:hover{background:#fff}
+.hero .btn.o{background:transparent;color:#fff;border:1px solid #d3d3d3}
+.hero .btn.o:hover{background:rgba(255,255,255,.15)}
+.brief-options input:checked+span{background:#e9e9e6;border-color:#e9e9e6;color:#171717}
+.brief-options input:focus-visible+span{outline-color:#fff}
+.copy-status{color:#e9e9e6}
+.service-link:hover .arr,.step em{background:#e5e5e2}
+@media(max-width:700px){
+ .hero{min-height:calc(100svh - 64px);padding:54px var(--pad);background-position:64% center;align-items:flex-end}
+ .hero>div:first-child{display:block}.hero-copy{max-width:100%}
+ .hero h1{font-size:clamp(40px,10vw,64px);margin-bottom:18px}
+ .hero .myname{font-size:15px;margin-bottom:14px}.hero .kick{font-size:11px;letter-spacing:.13em;margin-bottom:12px}
+ .hero .lead{font-size:16px;line-height:1.5}.hero .cta{display:flex;gap:10px;margin-top:24px}.hero .cta .btn{font-size:14px;padding:12px 15px}
+ #about{padding-top:54px;padding-bottom:54px}.about-intro{font-size:16px;margin-bottom:24px}
+ .wr{grid-template-columns:1fr auto;gap:7px 12px;padding:22px 0}.wt{grid-column:1/-1}
+ .wd{grid-column:1}.wd b{font-size:26px}.wd span{font-size:15px}
+ .service-link{grid-column:2;grid-row:2;align-self:center;font-size:0;gap:0}.service-link .arr{font-size:22px;width:44px;height:44px}
+ .about-head{grid-template-columns:1fr;gap:28px;margin-bottom:60px}.about-photo{max-width:280px;aspect-ratio:4/4.6}.about-copy .eyebrow{margin-bottom:12px}.about-copy h2{margin-bottom:12px}.about-copy p:last-child{font-size:16px}
+ .site-brand{font-size:15px;margin-right:auto}
+}
 </style>
 </head>
-<header><nav><a href="#custom">Сервисы</a><a href="#works">Работы</a><a href="#services">Услуги</a></nav>
+<header><a class="site-brand" href="#top">Евгения Гаршина</a><nav><a href="works.html#custom">Сервисы</a><a href="works.html">Работы</a><a href="#services">Услуги</a></nav>
 <div class="soc">
   <a href="https://t.me/evvalon" aria-label="Telegram" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
   <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" aria-label="MAX" rel="noopener"><span>MAX</span></a>
   <a href="https://vk.ru/iduhelet" aria-label="ВКонтакте" rel="noopener"><span>VK</span></a>
 </div></header>
 
-<main>
+<main id="top">
 <div class="hero">
-  <div>
+  <div class="hero-copy">
     <div class="myname"><span class="hl">Евгения Гаршина</span></div>
-    <div class="kick">СЕРВИСЫ · САЙТЫ · ИНФОГРАФИКА</div>
-    <h1>Сервисы, сайты и&nbsp;<span class="hl">карточки</span></h1>
-    <p class="lead">Давайте сотрудничать:) Расскажите задачу — предложу решение</p>
-    <div class="cta"><a class="btn" href="https://t.me/evvalon">Бесплатная консультация</a><a class="btn o" href="#works">Смотреть работы</a></div>
+    <div class="kick">СЕРВИСЫ И ПРИЛОЖЕНИЯ · САЙТЫ</div>
+    <h1>Сервисы для&nbsp;вашего бизнеса</h1>
+    <p class="lead">Давайте сотрудничать? Расскажите о задаче — предложу решение.</p>
+    <div class="cta"><a class="btn" href="#about">Что я делаю</a><a class="btn o" href="works.html">Смотреть работы</a></div>
   </div>
-  <div class="meb"><div class="mew"><span class="circ"></span><div class="me"><img src="me.jpg" alt="Евгения Гаршина" width="800" height="1067" fetchpriority="high" decoding="async"></div></div><p class="mecap">это я, Женя</p></div>
 </div>
 
 <section id="about">
-  <h2>Чем занимаюсь</h2>
+  <div class="about-head">
+    <figure class="about-photo"><img src="me.jpg" alt="Евгения Гаршина" width="800" height="1067" loading="lazy" decoding="async"></figure>
+    <div class="about-copy"><p class="eyebrow">ЕВГЕНИЯ ГАРШИНА</p><h2>Понятные решения для реальных задач.</h2><p>Делаю полезные сервисы, приложения и сайты. Сначала разбираюсь в задаче, затем предлагаю формат и показываю, как он будет работать.</p></div>
+  </div>
+  <h3 class="about-list-title">Чем могу помочь</h3>
+  <p class="about-list-intro">Выберите направление и откройте подходящие примеры на странице работ.</p>
   <div class="what">
-    <div class="wr"><span class="wt">[САЙТЫ]</span><div class="wd"><b>Сайты и лендинги</b><span>показывают ваши услуги, работы, цены и способы связи</span></div></div>
-    <div class="wr"><span class="wt">[СЕРВИСЫ]</span><div class="wd"><b>Приложения под рабочую задачу</b><span>запись клиентов, поиск по каталогу, подбор и учёт</span></div></div>
-    <div class="wr"><span class="wt">[КАРТОЧКИ]</span><div class="wd"><b>Обложки и слайды для Wildberries и Ozon</b></div></div>
-    <div class="wr"><span class="wt">[ИИ-ПОМОЩНИК]</span><div class="wd"><b>Настраиваю помощника под вашу задачу</b><span>помогает с повторяющимися текстовыми и рабочими задачами</span></div></div>
-    <div class="wr"><span class="wt">[ОБУЧЕНИЕ]</span><div class="wd"><b>Индивидуально обучаю работе с нейросетями</b><span>за 60 минут разбираем ваш запрос и пробуем решить первую задачу</span></div></div>
-  </div>
-  <div class="cta" style="margin-top:28px"><a class="btn" href="https://t.me/evvalon">Написать мне</a></div>
-</section>
-
-<section id="custom">
-  <h2>Сервисы под <span class="hl">задачу</span></h2>
-  <p class="md" style="margin:-6px 0 26px;max-width:560px">Есть повторяющаяся задача? Посмотрите, как я решала похожие задачи в проектах ниже.</p>
-  <div class="svc-grid">
-    <article class="svc">
-      <div class="shot"><img src="case-analogi-servis.png" alt="Сервис подбора аналогов запчастей: поиск замены по артикулу" width="1280" height="760" loading="lazy" decoding="async"></div>
-      <div class="body"><span class="badge">СЕРВИС КЛИЕНТА</span>
-        <h3><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg></span>Аналоги запчастей</h3>
-        <p><b>Задача:</b> подбор аналога занимал часы, данные жили в 18 файлах Excel</p>
-        <p><b>Результат:</b> все аналоги в одном приложении, часы работы превратились в секунды. Клиент сказал: «три года об этом мечтал»</p>
-      </div>
-    </article>
-    <article class="svc">
-      <div class="shot"><img src="zapisi.jpg" alt="Приложение для записи клиентов" width="1100" height="728" loading="lazy" decoding="async"></div>
-      <div class="body"><span class="badge">МОЁ ПРИЛОЖЕНИЕ</span>
-        <h3><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></span>Записи клиентов</h3>
-        <p><b>Задача:</b> записи жили в сторонних неудобных приложениях и заметках</p>
-        <p><b>Результат:</b> индивидуальное приложение для мастера с удобными вкладками</p>
-        <a class="go" target="_blank" rel="noopener" href="https://evvalon.gitverse.site/zapisi/">Открыть приложение</a>
-      </div>
-    </article>
-    <article class="svc">
-      <div class="shot"><img src="retsepty.jpg" alt="Приложение Мои рецепты" width="1100" height="816" loading="lazy" decoding="async"></div>
-      <div class="body"><span class="badge">МОЁ ПРИЛОЖЕНИЕ</span>
-        <h3><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4a2 2 0 0 1 2-2h11v20H7a2 2 0 0 1-2-2z"/><path d="M9 7h6M9 11h6"/></svg></span>Мои рецепты</h3>
-        <p><b>Задача:</b> рецепты хранились в скриншотах в галерее, это неудобно</p>
-        <p><b>Результат:</b> рецепты в одном месте и рассортированы, есть режим готовки и режим чтения со скриншота</p>
-        <a class="go" target="_blank" rel="noopener" href="https://evvalon.gitverse.site/recepty/">Открыть приложение</a>
-      </div>
-    </article>
-    <article class="svc">
-      <div class="shot"><img src="seminary.jpg" alt="Сервис учёта участников семинаров" width="1100" height="728" loading="lazy" decoding="async"></div>
-      <div class="body"><span class="badge">СЕРВИС КЛИЕНТА</span>
-        <h3><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h9M4 12h9M4 18h5"/><path d="m15 16 2.5 2.5L22 14"/></svg></span>Учёт участников семинаров</h3>
-        <p><b>Задача:</b> запись участников велась в блокноте</p>
-        <p><b>Результат:</b> удобный сервис учёта участников, им пользуется весь офис</p>
-      </div>
-    </article>
-  </div>
-  <div class="srv-wide" style="max-width:1080px">
-    <div><h3>Нужного сервиса ещё нет?</h3><p>Напишите идею в двух словах: что должно делаться само. Покажу, как это будет работать, и назову цену</p></div>
-    <a class="btn" href="https://t.me/evvalon">Написать идею</a>
+    <div class="wr"><span class="wt">СЕРВИСЫ</span><div class="wd"><b>Приложения под задачу</b><span>Подбор, запись, поиск и учёт в одном удобном инструменте.</span></div><a class="service-link" href="works.html#custom" aria-label="Посмотреть работы: сервисы">Посмотреть работы <span class="arr" aria-hidden="true">↗</span></a></div>
+    <div class="wr"><span class="wt">САЙТЫ</span><div class="wd"><b>Сайты и лендинги</b><span>Структура, дизайн и страницы, на которых легко найти нужное.</span></div><a class="service-link" href="works.html#work-sites" aria-label="Посмотреть работы: сайты">Посмотреть работы <span class="arr" aria-hidden="true">↗</span></a></div>
+    <div class="wr"><span class="wt">ИИ</span><div class="wd"><b>Помощники и обучение</b><span>Настройка под повторяющиеся задачи и разбор вашего запроса на практике.</span></div><a class="service-link" href="#services" aria-label="Подробнее об услугах: ИИ и обучение">Подробнее <span class="arr" aria-hidden="true">↗</span></a></div>
   </div>
 </section>
-
-<section id="works">
-  <h2>Мои работы</h2>
-  <p class="md" style="margin:-6px 0 22px;max-width:620px">У каждой работы указано, для кого она сделана.</p>
-  <h3 class="grp">Сайты</h3>
-<div class="works equal"><div class="col">
-      <div class="work"><img src="case-gorodskaya.jpg" alt="Сайт пекарни Городская на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><span class="work-kind">Концепт</span><h3>Городская: пекарня</h3><a class="l" target="_blank" rel="noopener" href="https://evvalon.github.io/gorodskaya/">Открыть сайт</a></div>
-      <div class="work"><img src="case-northroast.jpg" alt="Сайт кофейного бренда North Roast на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><span class="work-kind">Концепт</span><h3>North Roast: кофейный бренд</h3><a class="l" target="_blank" rel="noopener" href="https://evvalon.github.io/north-roast/">Открыть сайт</a></div>
-    </div><div class="col">
-      <div class="work"><img src="case-novaskin.jpg" alt="Сайт бренда ухода за кожей Nova Skin на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><span class="work-kind">Концепт</span><h3>Nova Skin: бренд ухода</h3><a class="l" target="_blank" rel="noopener" href="https://evvalon.github.io/NOVASKIN/">Открыть сайт</a></div>
-      <div class="work"><img src="case-psycholog.jpg" alt="Сайт психолога для мам на ноутбуке и телефоне" width="1100" height="825" loading="lazy" decoding="async"><span class="work-kind">Концепт</span><h3>Психолог для мам: сайт эксперта</h3><a class="l" target="_blank" rel="noopener" href="https://evvalon.github.io/psycholog/">Открыть сайт</a></div>
-    </div></div>
-<h3 class="grp" style="margin-top:60px">Инфографика для карточек</h3>
-<p class="md" style="margin:-6px 0 18px">Цену называю до начала работы.<a href="https://t.me/evvalon" style="text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:3px;text-underline-offset:5px;font-weight:600">Заказать такую</a></p>
-<div class="works one"><div class="col"><div class="work"><img src="ikona-infografika.jpg" alt="Инфографика для карточек маркетплейсов: примеры работ" width="1100" height="825" loading="lazy" decoding="async"><span class="tag">Инфографика</span><h3>Карточки для маркетплейсов</h3><p class="md" style="margin:2px 4px 10px;max-width:520px">Обложки и слайды для WB и Ozon. Пять работ внутри: пяльцы, кофе, диффузор, щётка, игрушка</p><a class="l" href="keys-infografika.html">Примеры карточек</a></div></div></div>
-
-<h3 class="grp" style="margin-top:60px">Гайд</h3>
-<div class="works one"><div class="col">
-      <div class="work"><img src="gayd.jpg" alt="Гайд: как собрать карточку, которую открывают" width="1100" height="500" loading="lazy" decoding="async"><span class="tag">Гайд</span><h3>Как собрать карточку, которую открывают</h3><a class="l" target="_blank" rel="noopener" href="gayd.html">Открыть гайд</a></div>
-    </div></div>
-  </section>
 
 <section id="how">
   <h2>Как это будет</h2>
@@ -293,6 +314,8 @@ p,.md,.lead,.mecap{text-wrap:pretty}
   <h2>Услуги и цены</h2>
   <div class="menu">
     <div class="mg">
+      <h3 class="mt"><span class="hl">Сервисы и приложения</span></h3>
+      <div class="mi"><div class="mr"><b>Под рабочую задачу</b><i></i><span>от&nbsp;10&nbsp;000&nbsp;₽</span></div><p class="md">Подбор, запись, учёт или каталог с поиском. Состав функций, срок и стоимость уточню после обсуждения задачи.</p></div>
       <h3 class="mt"><span class="hl">Сайты</span></h3>
       <div class="mi"><div class="mr"><b>Сайт на 1 страницу</b><i></i><span>от&nbsp;10&nbsp;000&nbsp;₽</span></div><p class="md">для визитки, портфолио и лендинга: до&nbsp;6&nbsp;блоков, адаптация для телефона и компьютера, публикация и ссылка</p></div>
       <div class="mi"><div class="mr"><b>Квиз или форма на сайте</b><i></i><span>+&nbsp;2&nbsp;000&nbsp;₽</span></div></div>
@@ -300,31 +323,58 @@ p,.md,.lead,.mecap{text-wrap:pretty}
     </div>
     <div class="mg">
       <h3 class="mt"><span class="hl">Карточки</span></h3>
-      <div class="mi"><div class="mr"><b>Обложка</b><i></i><span>от&nbsp;600&nbsp;₽</span></div></div>
-      <div class="mi"><div class="mr"><b>Слайд</b><i></i><span>от&nbsp;400&nbsp;₽</span></div></div>
-      <div class="mi"><div class="mr"><b>4&nbsp;слайда всего, включая обложку</b><i></i><span>1&nbsp;800&nbsp;₽</span></div></div>
-      <div class="mi"><div class="mr"><b>5&nbsp;слайдов всего, включая обложку</b><i></i><span>2&nbsp;000&nbsp;₽</span></div></div>
+      <div class="mi"><div class="mr"><b>Обложки и слайды</b><i></i><span>от&nbsp;600&nbsp;₽</span></div><p class="md"><a href="works.html#work-cards">Примеры карточек и калькулятор</a></p></div>
       <h3 class="mt" style="margin-top:26px"><span class="hl">ИИ и обучение</span></h3>
       <div class="mi"><div class="mr"><b>Помощник под ваши задачи</b><i></i><span>от&nbsp;3&nbsp;000&nbsp;₽</span></div><p class="md">обсудим задачу, настрою помощника и покажу, как им пользоваться</p></div>
       <div class="mi"><div class="mr"><b>Обучение, разбор 60 минут</b><i></i><span>от&nbsp;3&nbsp;000&nbsp;₽</span></div><p class="md">индивидуальный созвон с практикой на вашей задаче</p></div>
       <h3 class="mt" style="margin-top:26px"><span class="hl">Отдельно</span></h3>
-      <div class="mi"><div class="mr"><b>Сервис или приложение под задачу</b><i></i><span>от&nbsp;10&nbsp;000&nbsp;₽</span></div><p class="md">подбор, запись, учёт или каталог с поиском. Состав функций, доступ и публикацию согласуем до начала работы. Срок и цену назову после обсуждения задачи</p></div>
       <div class="mi"><div class="mr"><b>Магазин, каталог, сложный сайт</b><i></i><span>считаю отдельно</span></div><p class="md">расскажите задачу, предложу решение и&nbsp;срок</p></div>
     </div>
     <div class="mf"><a class="btn" href="https://t.me/evvalon">Заказать</a></div>
   </div>
 </section>
-<div class="contact" id="contact">
-  <h2>Напишите, что нужно: отвечу и назову цену</h2>
-    <a class="btn" href="https://t.me/evvalon">Написать в Telegram</a>
-    <p class="alt">или в другом мессенджере: <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" rel="noopener">MAX</a> · <a href="https://vk.ru/iduhelet" rel="noopener">ВКонтакте</a> · <a href="mailto:evgeniya.gluhih@mail.ru">Почта</a></p>
-</div>
+<section class="brief" id="brief">
+  <h2>Расскажите о задаче</h2>
+  <p>Выберите направление и пару деталей. Подготовим сообщение, которое можно скопировать и отправить удобным способом.</p>
+  <form id="brief-form">
+    <fieldset><legend>Что нужно сделать?</legend><div class="brief-options">
+      <label><input type="radio" name="kind" value="Сайт" required><span>Сайт</span></label>
+      <label><input type="radio" name="kind" value="Сервис или приложение"><span>Сервис или приложение</span></label>
+      <label><input type="radio" name="kind" value="Карточки для маркетплейса"><span>Карточки</span></label>
+      <label><input type="radio" name="kind" value="Помощник или обучение ИИ"><span>ИИ и обучение</span></label>
+      <label><input type="radio" name="kind" value="Пока не знаю"><span>Пока не знаю</span></label>
+    </div></fieldset>
+    <fieldset><legend>Что уже есть?</legend><div class="brief-options">
+      <label><input type="radio" name="stage" value="Есть материалы или действующий проект" required><span>Есть материалы или проект</span></label>
+      <label><input type="radio" name="stage" value="Начинаю с нуля"><span>Начинаю с нуля</span></label>
+      <label><input type="radio" name="stage" value="Пока не знаю"><span>Пока не знаю</span></label>
+    </div></fieldset>
+    <label for="brief-task" style="display:block;font-weight:600;font-size:18px;margin:8px 0 16px">Опишите задачу в двух словах</label>
+    <textarea id="brief-task" name="task" placeholder="Например: нужен сайт с примерами работ и удобной связью"></textarea>
+    <button class="btn" type="submit">Подготовить сообщение</button>
+    <p class="brief-note">Ваши ответы остаются на этой странице, пока вы сами не решите отправить сообщение.</p>
+  </form>
+  <div class="brief-result" id="brief-result" hidden>
+    <h3>Сообщение готово</h3>
+    <p>Проверьте текст, при желании поправьте его, затем скопируйте и откройте удобный мессенджер.</p>
+    <label for="brief-message" style="display:block;margin-bottom:10px;font-weight:600">Текст сообщения</label>
+    <textarea class="brief-message" id="brief-message"></textarea>
+    <div class="brief-actions">
+      <button class="btn" type="button" id="brief-copy">Скопировать текст</button>
+      <a href="https://t.me/evvalon" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" target="_blank" rel="noopener">MAX</a>
+      <a href="https://vk.ru/iduhelet" target="_blank" rel="noopener">ВКонтакте</a>
+      <a id="brief-email" href="mailto:evgeniya.gluhih@mail.ru">Почта</a>
+    </div>
+    <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+  </div>
+</section>
 </main>
 <footer><span>© Евгения Гаршина · <a href="https://t.me/evvalon">Telegram</a> · <a href="https://max.ru/u/f9LHodD0cOLc8vE6ZdTK-qmdp7qmhYqcSUPp0e_dX8KkbMWdPMrzs9gRmVo" rel="noopener">MAX</a> · <a href="https://vk.ru/iduhelet" rel="noopener">ВКонтакте</a> · <a href="mailto:evgeniya.gluhih@mail.ru">Почта</a></span><span><a href="privacy.html">О данных и Метрике</a></span><span>Яндекс Метрика работает после вашего согласия</span></footer>
 <div id="privacy-choice" class="privacy-choice" hidden><p>Можно включить Яндекс Метрику для статистики посещений. <a href="privacy.html">Как используются данные</a></p><div><button id="privacy-reject" type="button">Не включать</button><button id="privacy-accept" type="button">Разрешить</button></div></div>
 <a class="fab" href="https://t.me/evvalon" aria-label="Написать в Telegram">Написать мне</a>
 <script>
-/* Яндекс Метрика запускается только после согласия; вебвизор и карта кликов выключены. */
+/* Яндекс Метрика запускается только после согласия; вебвизор выключен. */
 function startMetrika(){
 if(location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'){
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=114637843","ym");
@@ -339,9 +389,32 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 </script>
 <script>
-/* плавающая кнопка не нужна там, где уже есть кнопка контактов, и не закрывает подвал */
+document.getElementById('brief-form').addEventListener('submit',function(event){
+  event.preventDefault();
+  var data=new FormData(this);
+  var body='Здравствуйте, Евгения!\n\nМне нужно: '+data.get('kind')+'.\nЧто уже есть: '+data.get('stage')+'.\nО задаче: '+(String(data.get('task')||'').trim()||'Расскажу подробнее при общении')+'.';
+  document.getElementById('brief-message').value=body;
+  document.getElementById('copy-status').textContent='';
+  document.getElementById('brief-result').hidden=false;
+  document.getElementById('brief-result').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.getElementById('brief-copy').addEventListener('click',async function(){
+  var field=document.getElementById('brief-message');
+  var status=document.getElementById('copy-status');
+  try{
+    if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(field.value)}
+    else{field.focus();field.select();if(!document.execCommand('copy'))throw new Error('copy failed')}
+    status.textContent='Скопировано. Откройте мессенджер и вставьте текст в чат.';
+  }catch(error){field.focus();field.select();status.textContent='Не получилось скопировать автоматически. Текст выделен — скопируйте его вручную.'}
+});
+document.getElementById('brief-email').addEventListener('click',function(){
+  this.href='mailto:evgeniya.gluhih@mail.ru?subject='+encodeURIComponent('Задача с evvalon.ru')+'&body='+encodeURIComponent(document.getElementById('brief-message').value);
+});
+</script>
+<script>
+/* Плавающая кнопка не закрывает форму и подвал. */
 (function(){
-  var f=document.querySelector('.fab'),zones=[document.getElementById('contact'),document.querySelector('footer')],seen=[false,false];
+  var f=document.querySelector('.fab'),zones=[document.getElementById('brief'),document.querySelector('footer')],seen=[false,false];
   if(!f||!('IntersectionObserver' in window))return;
   zones.forEach(function(z,i){
     if(!z)return;
